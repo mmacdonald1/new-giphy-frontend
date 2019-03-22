@@ -11,7 +11,7 @@ class App extends Component {
     }
   }
   componentDidMount(){
-    fetch(`https://quiet-badlands-31127.herokuapp.com/giphies`)
+    fetch(`https://new-giphy-backend.herokuapp.com/giphies`)
     .then(resp => resp.json())
     .then(data => this.setState({giphies: data}))
   }
